@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Command Helper</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script>
+        // Language detection and redirection
+        (function() {
+            var language = navigator.language || navigator.userLanguage;
+            if (language.startsWith('zh')) {
+                window.location.href = 'zh/';
+            } else {
+                window.location.href = 'en/';
+            }
+        })();
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Command Helper</h1>
+        <p>Redirecting to the appropriate language...</p>
+        <div class="language-links">
+            <a href="en/">English</a> | 
+            <a href="zh/">中文</a>
+        </div>
+    </div>
+</body>
+</html>
